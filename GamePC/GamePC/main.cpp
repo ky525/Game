@@ -30,7 +30,7 @@ int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance,LPSTR lpCmdLine
 	DrawLine(600,200,650,300,0xffffffff);
 	DrawLine(800,200,650,500,0xffffffff);
 
-	// Éc
+	// ÅI
 	DrawLine(1000,200,1000,400,0xffffffff,15);
 	DrawLine(1000,485,1000,500,0xffffffff,15);
 
