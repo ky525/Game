@@ -3,7 +3,7 @@
 //! @title main.cpp
 //! @brief ƒƒCƒ“ŠÖ”
 //! @author ky
-//!
+//! test
 //*****************************************************
 
 #include "DxLib.h"
