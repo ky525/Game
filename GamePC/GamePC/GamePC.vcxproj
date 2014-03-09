@@ -122,7 +122,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="gameObject.cpp" />
+    <ClCompile Include="gameObjectManager.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="testGameObject.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gameObject.h" />
+    <ClInclude Include="gameObjectManager.h" />
+    <ClInclude Include="testGameObject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
