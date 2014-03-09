@@ -1,7 +1,7 @@
-//*****************************************************
+ï»¿//*****************************************************
 //!
 //! @title gameObjectManager.h
-//! @brief ƒQ[ƒ€ƒIƒuƒWƒFƒNƒgŠÇ—ƒNƒ‰ƒX(ƒVƒ“ƒOƒ‹ƒgƒ“)
+//! @brief ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç®¡ç†ã‚¯ãƒ©ã‚¹(ã‚·ãƒ³ã‚°ãƒ«ãƒˆãƒ³)
 //! @author ky
 //!
 //*****************************************************
@@ -12,19 +12,19 @@
 using namespace game;
 
 //-----------------------------------------------------
-//! @brief ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+//! @brief ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 //-----------------------------------------------------
 GameObjectManager::GameObjectManager(void)
 {
 }
 //-----------------------------------------------------
-//! @brief ƒfƒXƒgƒ‰ƒNƒ^
+//! @brief ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 //-----------------------------------------------------
 GameObjectManager::~GameObjectManager(void)
 {
 }
 //-----------------------------------------------------
-//! @brief ƒCƒ“ƒXƒ^ƒ“ƒXæ“¾
+//! @brief ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹å–å¾—
 //-----------------------------------------------------
 GameObjectManager *GameObjectManager::getInstance(void)
 {
@@ -32,14 +32,14 @@ GameObjectManager *GameObjectManager::getInstance(void)
 	return &instance;
 }
 //-----------------------------------------------------
-//! @brief ’Ç‰Á
+//! @brief è¿½åŠ 
 //-----------------------------------------------------
 void GameObjectManager::addGameObject(GameObject *element)
 {
 	mGameObjectTbl.push_back(element);
 }
 //-----------------------------------------------------
-//! @brief XV
+//! @brief æ›´æ–°
 //-----------------------------------------------------
 void GameObjectManager::updateGameObject(void)
 {
@@ -51,7 +51,7 @@ void GameObjectManager::updateGameObject(void)
 	}
 }
 //-----------------------------------------------------
-//! @brief •`‰æ
+//! @brief æç”»
 //-----------------------------------------------------
 void GameObjectManager::drawGameObject(void)
 {

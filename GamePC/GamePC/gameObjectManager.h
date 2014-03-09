@@ -1,7 +1,7 @@
-//*****************************************************
+ï»¿//*****************************************************
 //!
 //! @title gameObjectManager.h
-//! @brief ƒQ[ƒ€ƒIƒuƒWƒFƒNƒgŠÇ—ƒNƒ‰ƒX(ƒVƒ“ƒOƒ‹ƒgƒ“)
+//! @brief ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç®¡ç†ã‚¯ãƒ©ã‚¹(ã‚·ãƒ³ã‚°ãƒ«ãƒˆãƒ³)
 //! @author ky
 //!
 //*****************************************************
@@ -10,38 +10,38 @@
 
 namespace game
 {
-	// ‘O•ûéŒ¾
+	// å‰æ–¹å®£è¨€
 	class GameObject;
 
 	class GameObjectManager
 	{
 	private:
-		//! @brief ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+		//! @brief ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 		GameObjectManager(void);
 
-		//! @brief ƒfƒXƒgƒ‰ƒNƒ^
+		//! @brief ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 		~GameObjectManager(void);
 
-		//! @brief ƒRƒs[
+		//! @brief ã‚³ãƒ”ãƒ¼
 		GameObjectManager(const GameObjectManager &rhs);
 
-		//! @brief ‘ã“ü
+		//! @brief ä»£å…¥
 		GameObjectManager &operator=(const GameObjectManager &rhs);
 
 	public:
-		//! @brief ƒCƒ“ƒXƒ^ƒ“ƒXæ“¾
+		//! @brief ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹å–å¾—
 		static GameObjectManager *getInstance(void);
 
-		//! @brief ’Ç‰Á
+		//! @brief è¿½åŠ 
 		void addGameObject(GameObject *element);
 
-		//! @brief XV
+		//! @brief æ›´æ–°
 		void updateGameObject(void);
 
-		//! @brief •`‰æ
+		//! @brief æç”»
 		void drawGameObject(void);
 
 	private:
-		std::vector<GameObject*> mGameObjectTbl;	//!< ƒQ[ƒ€ƒIƒuƒWƒFƒNƒgƒe[ƒuƒ‹
+		std::vector<GameObject*> mGameObjectTbl;	//!< ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãƒ†ãƒ¼ãƒ–ãƒ«
 	};
 }

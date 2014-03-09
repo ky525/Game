@@ -1,7 +1,7 @@
-//*****************************************************
+ï»¿//*****************************************************
 //!
 //! @title gameObject.h
-//! @brief ƒQ[ƒ€“àƒIƒuƒWƒFƒNƒg‚ÌŠî’êƒNƒ‰ƒX
+//! @brief ã‚²ãƒ¼ãƒ å†…ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åŸºåº•ã‚¯ãƒ©ã‚¹
 //! @author ky
 //!
 //*****************************************************
@@ -11,16 +11,16 @@ namespace game
 	class GameObject
 	{
 		public:
-			//! @brief ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+			//! @brief ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 			GameObject(void);
 
-			//! @brief ƒfƒXƒgƒ‰ƒNƒ^
+			//! @brief ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 			~GameObject(void);
 
-			//! @brief XV
+			//! @brief æ›´æ–°
 			virtual void update(void){};
 
-			//! @brief •`‰æ
+			//! @brief æç”»
 			virtual void draw(void){};
 	};
 }

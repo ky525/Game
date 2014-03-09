@@ -1,7 +1,7 @@
-//*****************************************************
+ï»¿//*****************************************************
 //!
 //! @title main.cpp
-//! @brief ƒƒCƒ“ŠÖ”
+//! @brief ãƒ¡ã‚¤ãƒ³é–¢æ•°
 //! @author ky
 //!
 //*****************************************************
@@ -12,44 +12,44 @@
 
 using namespace game;
 //-----------------------------------------------------
-//! @brief ƒƒCƒ“ŠÖ”
+//! @brief ãƒ¡ã‚¤ãƒ³é–¢æ•°
 //-----------------------------------------------------
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,LPSTR lpCmdLine, int nCmdShow)
 {
 	ChangeWindowMode(true);
 	SetGraphMode(1280, 720, 32);
 
-	// ‚c‚wƒ‰ƒCƒuƒ‰ƒŠ‰Šú‰»ˆ—
+	// ï¼¤ï¼¸ãƒ©ã‚¤ãƒ–ãƒ©ãƒªåˆæœŸåŒ–å‡¦ç†
 	if(DxLib_Init() == -1)
 	{
-		// ƒGƒ‰[‚ª‹N‚«‚½‚ç’¼‚¿‚ÉI—¹
+		// ã‚¨ãƒ©ãƒ¼ãŒèµ·ããŸã‚‰ç›´ã¡ã«çµ‚äº†
 		return -1;
 	}
 
-	// •`‰ææ‚ğ— ‰æ–Ê‚Éİ’è
+	// æç”»å…ˆã‚’è£ç”»é¢ã«è¨­å®š
 	SetDrawScreen(DX_SCREEN_BACK);
 
-	// ƒQ[ƒ€ƒIƒuƒWƒFƒNƒg‚ğƒ}ƒl[ƒWƒƒ‚É’Ç‰Á‚·‚é
-	// TODO ƒV[ƒ“ŠÇ—‹@\ì¬
+	// ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ãƒãƒãƒ¼ã‚¸ãƒ£ã«è¿½åŠ ã™ã‚‹
+	// TODO ã‚·ãƒ¼ãƒ³ç®¡ç†æ©Ÿæ§‹ä½œæˆ
 	auto *g = new TestGameObject();
 	GameObjectManager::getInstance()->addGameObject(g);
 
-	// ƒƒCƒ“ƒ‹[ƒv
-	// TODO •ÊƒXƒŒƒbƒh‰»
+	// ãƒ¡ã‚¤ãƒ³ãƒ«ãƒ¼ãƒ—
+	// TODO åˆ¥ã‚¹ãƒ¬ãƒƒãƒ‰åŒ–
 	while(!ProcessMessage() && !ClearDrawScreen())
 	{
-		// ƒQ[ƒ€ƒIƒuƒWƒFƒNƒg‚ÌXV
+		// ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®æ›´æ–°
 		GameObjectManager::getInstance()->updateGameObject();
 
-		// ƒQ[ƒ€ƒIƒuƒWƒFƒNƒg‚Ì•`‰æ
+		// ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®æç”»
 		GameObjectManager::getInstance()->drawGameObject();
 
 		ScreenFlip();
 	}
 
-	// ‚c‚wƒ‰ƒCƒuƒ‰ƒŠg—p‚ÌI—¹ˆ—
+	// ï¼¤ï¼¸ãƒ©ã‚¤ãƒ–ãƒ©ãƒªä½¿ç”¨ã®çµ‚äº†å‡¦ç†
 	DxLib_End();
 
-	// ƒ\ƒtƒg‚ÌI—¹
+	// ã‚½ãƒ•ãƒˆã®çµ‚äº†
 	return 0;
 }
