@@ -34,7 +34,7 @@ GameObjectManager *GameObjectManager::getInstance(void)
 //-----------------------------------------------------
 //! @brief 追加
 //-----------------------------------------------------
-void GameObjectManager::addGameObject(GameObject *element)
+void GameObjectManager::addGameObject(std::shared_ptr<GameObject> element)
 {
 	mGameObjectTbl.push_back(element);
 }

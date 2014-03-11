@@ -7,6 +7,7 @@
 //*****************************************************
 
 #include <vector>
+#include <memory>
 
 namespace game
 {
@@ -33,7 +34,7 @@ namespace game
 		static GameObjectManager *getInstance(void);
 
 		//! @brief 追加
-		void addGameObject(GameObject *element);
+		void addGameObject(std::shared_ptr<GameObject> element);
 
 		//! @brief 更新
 		void updateGameObject(void);
@@ -42,6 +43,6 @@ namespace game
 		void drawGameObject(void);
 
 	private:
-		std::vector<GameObject*> mGameObjectTbl;	//!< ゲームオブジェクトテーブル
+		std::vector<std::shared_ptr<GameObject>> mGameObjectTbl;	//!< ゲームオブジェクトテーブル
 	};
 }

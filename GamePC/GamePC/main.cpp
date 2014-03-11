@@ -31,7 +31,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,LPSTR lpCmdLine,
 
 	// ゲームオブジェクトをマネージャに追加する
 	// TODO シーン管理機構作成
-	auto *g = new TestGameObject();
+	std::shared_ptr<TestGameObject> g(new TestGameObject);
 	GameObjectManager::getInstance()->addGameObject(g);
 
 	// メインループ
